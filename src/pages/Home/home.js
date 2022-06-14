@@ -9,8 +9,23 @@ import FisioUnivel from "../../components/img/FisioUnivel.webp"
 import NutriUnivel from "../../components/img/NutriUnivel.jpg"
 import "./style-modules.css"
 import { Carroceu } from "../../components/Carousel/carousel";
+import { useState } from "react";
 
 export function Home() {
+    const [anime, setAnime] = useState("")
+    const target = document.querySelectorAll("[data-anime]")
+    
+    function animeScroll(){
+        const windowTop = window.pageYOffset
+        console.log(windowTop)
+        target.forEach((element) =>{
+            console.log(element.offsetTop)
+            if((windowTop) > 100){
+                setAnime("animate")
+            }
+        })
+    }
+    window.addEventListener("scroll", () => {animeScroll()})
     return ( 
     <>
         <section className="Header">
@@ -30,31 +45,39 @@ export function Home() {
             />
 
         </section>
-        <section className="especializacoes">
-            <Card 
-            especImg={Nutricao}
-            especializacao="Nutrição"
-            />
-            <Card 
-            especImg={Aquatica}
-            especializacao="Fisioterapia Aquática"
-            />
-            <Card 
-            especImg={Ortopedia}
-            especializacao="Fisioterapia em Ortopedia"
-            />
-            <Card 
-            especImg={Neurologia}
-            especializacao="Fisioterapia em Neurologia"
-            />
-            <Card 
-            especImg={Desportiva}
-            especializacao="Fisioterapia Desportiva"
-            />
-            <Card 
-            especImg={Aquatica}
-            especializacao="Nutrição"
-            />
+        <section className="especializacoes" >
+            <div data-anime="left" className={anime}>
+                <Card 
+                especImg={Nutricao}
+                especializacao="Nutrição"
+                />
+            </div>
+            <div data-anime="right" className={anime}>
+                <Card 
+                especImg={Aquatica}
+                especializacao="Fisioterapia Aquática"
+                />
+            </div>
+            <div data-anime="left" className={anime}>
+               <Card 
+                especImg={Ortopedia}
+                especializacao="Fisioterapia em Ortopedia"
+                /> 
+            </div>
+            <div data-anime="right" className={anime}>
+                <Card 
+                especImg={Neurologia}
+                especializacao="Fisioterapia em Neurologia"
+                />
+            </div>
+            <div data-anime="left" className={anime}>
+                <Card 
+                especImg={Desportiva}
+                especializacao="Fisioterapia Desportiva"
+                
+                />
+            </div>
+           
         </section> 
     </>
     );
