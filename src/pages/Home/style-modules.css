@@ -1,0 +1,22 @@
+.especializacoes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(230, 230, 230);
+    margin-top: 0;
+}
+.Header{
+    background-color: rgba(0, 110, 184, 0.897);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+    color: white;
+    height: 80px;
+}
+.CNTA{
+    margin-bottom: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
