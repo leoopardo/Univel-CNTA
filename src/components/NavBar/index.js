@@ -10,7 +10,7 @@ export function NavBar() {
               <Nav className="me-auto">
   
                 <Nav.Link href="/sobre-nos">Sobre nós</Nav.Link>
-                <Nav.Link href="https://wa.me/554591297707">Whats-app</Nav.Link>
+                <Nav.Link href="https://wa.me/554591297707">WhatsApp</Nav.Link>
               </Nav>
             </section>
             </Container>
