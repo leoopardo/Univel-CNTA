@@ -16,14 +16,7 @@ export function Home() {
     const target = document.querySelectorAll("[data-anime]")
     
     function animeScroll(){
-        const windowTop = window.pageYOffset
-        console.log(windowTop)
-        target.forEach((element) =>{
-            console.log(element.offsetTop)
-            if((windowTop) > 100){
-                setAnime("animate")
-            }
-        })
+        setAnime("animate")
     }
     window.addEventListener("scroll", () => {animeScroll()})
     return ( 
@@ -46,6 +39,7 @@ export function Home() {
 
         </section>
         <section className="especializacoes" >
+            <h2 className="Atendimentos">Quais atendimenos eu posso receber no CNTA?</h2>
             <div data-anime="left" className={anime}>
                 <Card 
                 especImg={Nutricao}

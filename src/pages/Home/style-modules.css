@@ -19,6 +19,15 @@
     margin-left: 10%;
     margin-right: 10%; 
 }
+.Atendimentos{
+    color: rgb(0, 61, 102);
+    height: 90px;
+    width: screen;
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
 [data-anime]{
     opacity: 0;
     transition: 2s;
@@ -32,4 +41,12 @@
 [data-anime].animate{
     opacity: 1;
     transform: translate3d(0, 0, 0);
+}
+@media  screen and (min-width: 1000px) and (max-width: 2000px) {
+    .Atendimentos{
+        height: 90px;
+        width: 1000px;
+        margin-left: 26%;
+    }
+    
 }

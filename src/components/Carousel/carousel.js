@@ -1,10 +1,11 @@
 import { Carousel } from "react-bootstrap";
-
+import "./style-modules.css"
 export function Carroceu(props) {
     return ( 
-        <Carousel variant="dark">
+  <Carousel variant="dark">
   <Carousel.Item>
     <img
+      id="carroceuImg"
       className="d-block w-100"
       src={props.Carroceu1}
       alt={props.Carroceu1Nome}
@@ -17,6 +18,7 @@ export function Carroceu(props) {
   </Carousel.Item>
   <Carousel.Item>
     <img
+      id="carroceuImg"
       className="d-block w-100"
       src={props.Carroceu2}
       alt={props.Carroceu2Nome}
@@ -29,6 +31,7 @@ export function Carroceu(props) {
   </Carousel.Item>
   <Carousel.Item>
     <img
+     id="carroceuImg"
       className="d-block w-100"
       src={props.Carroceu3}
       alt={props.Carroceu3Nome}
