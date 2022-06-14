@@ -44,31 +44,35 @@ export function Home() {
                 <Card 
                 especImg={Nutricao}
                 especializacao="Nutrição"
+                link="nutricao"
                 />
             </div>
             <div data-anime="right" className={anime}>
                 <Card 
                 especImg={Aquatica}
                 especializacao="Fisioterapia Aquática"
+                link="aquatica"
                 />
             </div>
             <div data-anime="left" className={anime}>
                <Card 
                 especImg={Ortopedia}
                 especializacao="Fisioterapia em Ortopedia"
+                link="ortopedia"
                 /> 
             </div>
             <div data-anime="right" className={anime}>
                 <Card 
                 especImg={Neurologia}
                 especializacao="Fisioterapia em Neurologia"
+                link="neurologia"
                 />
             </div>
             <div data-anime="left" className={anime}>
                 <Card 
                 especImg={Desportiva}
                 especializacao="Fisioterapia Desportiva"
-                
+                link="desportiva"
                 />
             </div>
            
