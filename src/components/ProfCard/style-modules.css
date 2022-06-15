@@ -1,0 +1,25 @@
+.ProfCard{
+    height: 250px;
+    width: 150px;
+    background-color: rgba(0, 110, 184, 0.897);
+    border: 5px solid rgba(0, 110, 184, 0.897);
+    border-radius: 2%;
+    margin-top: 3%;
+}
+.ProfImage{
+    height: 130px;
+    border-radius: 5%;
+}
+.NomeDescr{
+    background-color: white;
+    margin: 0;
+    height: 112px;
+}
+.ProfNome{
+    color: white;
+    background-color: rgba(0, 110, 184, 0.897);
+    margin-bottom: 0;
+}
+.ProfDescr{
+    margin-top: 0;
+}

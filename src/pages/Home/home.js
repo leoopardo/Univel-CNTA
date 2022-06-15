@@ -13,11 +13,11 @@ import { useState } from "react";
 
 export function Home() {
     const [anime, setAnime] = useState("")
-    const target = document.querySelectorAll("[data-anime]")
-    
+
     function animeScroll(){
         setAnime("animate")
     }
+    
     window.addEventListener("scroll", () => {animeScroll()})
     return ( 
     <>

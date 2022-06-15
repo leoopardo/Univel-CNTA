@@ -1,0 +1,31 @@
+.descricao{
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-weight: 300;
+    font-size: larger;
+    text-align: justify;
+}
+.Profs{
+    margin: 5%;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    max-width: 500px;
+}
+.ProfsSection{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media screen and (min-width: 900px) and (max-width: 2000px){
+    .descricao{
+        margin-top: 2%;
+        margin-left: 25%;
+        margin-right: 25%;
+        font-weight: 300;
+        text-align: center;
+    }
+}
