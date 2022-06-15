@@ -1,0 +1,10 @@
+.FooterSection{   
+    background-color: rgba(88, 112, 126, 0.863);
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5%;
+}
+.Endereço{
+    color: white;
+    font-weight: 700;
+}

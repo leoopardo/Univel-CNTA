@@ -4,6 +4,8 @@
     justify-content: center;
     background-color: rgb(230, 230, 230);
     margin-top: 0;
+    padding-bottom: 7%;
+    padding-top: 7%;
 }
 .Header{
     background-color: rgba(0, 110, 184, 0.897);
